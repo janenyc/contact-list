@@ -1,12 +1,12 @@
 
-function ContactRow(name, phone, email){
+function ContactRow({ contact, setSelectedContactId }) {
     return (
-        <tr>
-            <td>{name}</td>
-            <td>{phone}</td>
-            <td>{email}</td>
-        </tr>
-    )
-}
+      <tr>
+        <td>{contact.name}</td>
+        <td>{contact.phone}</td>
+        <td>{contact.email}</td>
+      </tr>
+    );
+  }
 
 export default ContactRow
